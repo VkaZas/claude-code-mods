@@ -1,0 +1,24 @@
+{
+  "name": "vkazas",
+  "owner": {
+    "name": "VkaZas",
+    "url": "https://github.com/VkaZas"
+  },
+  "metadata": {
+    "description": "Little mods for the Claude Code terminal: pixel pets above the prompt and a typing combo counter."
+  },
+  "plugins": [
+    {
+      "name": "pixel-parade",
+      "source": "./pixel-parade",
+      "description": "Hand-drawn pixel-art cats and dogs wander above the prompt.",
+      "category": "fun"
+    },
+    {
+      "name": "typing-combo",
+      "source": "./typing-combo",
+      "description": "A fighting-game combo counter that takes a hit on every keystroke.",
+      "category": "fun"
+    }
+  ]
+}

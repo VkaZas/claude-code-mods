@@ -1,0 +1,70 @@
+{
+  "name": "pixel-parade",
+  "displayName": "Pixel Parade",
+  "version": "1.0.0",
+  "description": "Hand-drawn pixel-art cats and dogs wander above the prompt: they stroll, sit, nap, zoom, share hearts and chase each other. Choose how many, and cats, dogs or both.",
+  "author": {
+    "name": "VkaZas",
+    "url": "https://github.com/VkaZas"
+  },
+  "homepage": "https://github.com/VkaZas/claude-code-mods/tree/main/pixel-parade",
+  "repository": "https://github.com/VkaZas/claude-code-mods",
+  "license": "MIT",
+  "keywords": [
+    "mod",
+    "fun",
+    "pets",
+    "pixel-art",
+    "cats",
+    "dogs"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "count": {
+      "type": "string",
+      "title": "Count / 数量",
+      "description": "How many animals wander above the prompt at once / 同时走动的数量",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "default": "3"
+    },
+    "kind": {
+      "type": "string",
+      "title": "Animals / 种类",
+      "description": "both: cats and dogs; cats: cats only; dogs: dogs only",
+      "options": [
+        "both",
+        "cats",
+        "dogs"
+      ],
+      "default": "both"
+    },
+    "style": {
+      "type": "string",
+      "title": "Style / 样式",
+      "description": "pixel: hand-drawn pixel art; ascii: =^.^= characters",
+      "options": [
+        "pixel",
+        "ascii"
+      ],
+      "default": "pixel"
+    },
+    "language": {
+      "type": "string",
+      "title": "Language / 语言",
+      "description": "en: English; zh: 中文",
+      "options": [
+        "en",
+        "zh"
+      ],
+      "default": "en"
+    }
+  }
+}

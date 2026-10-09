@@ -1,0 +1,33 @@
+{
+  "name": "typing-combo",
+  "displayName": "Typing Combo",
+  "version": "1.0.0",
+  "description": "A fighting-game combo counter above the prompt: big digits that hit harder the faster you type, with hit-stop, ranks, keys per second and your best.",
+  "author": {
+    "name": "VkaZas",
+    "url": "https://github.com/VkaZas"
+  },
+  "homepage": "https://github.com/VkaZas/claude-code-mods/tree/main/typing-combo",
+  "repository": "https://github.com/VkaZas/claude-code-mods",
+  "license": "MIT",
+  "keywords": [
+    "mod",
+    "fun",
+    "typing",
+    "combo",
+    "prompt"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Language / 语言",
+      "description": "en: English; zh: 中文",
+      "options": [
+        "en",
+        "zh"
+      ],
+      "default": "en"
+    }
+  }
+}
