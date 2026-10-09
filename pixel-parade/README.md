@@ -47,6 +47,12 @@ And change them on the fly; these overrides are remembered across sessions:
 | `/parade status` | Who is out and what each one is doing |
 | `/parade reset` | Back to the `/config` defaults |
 
+## What it hooks
+
+- `session.start`: registers the `/parade` command, restores your saved overrides and starts a clock that moves the animals every 0.2 seconds. The session start itself passes through unchanged.
+- `command.run`, for `/parade` only: reads the arguments and answers with one line of text. No other command reaches it.
+- `ui.render` on `AbovePrompt`: draws the lane, with whatever is drawn beneath it passed through unchanged below.
+
 ## Notes
 
 - Pixel Parade is a mod: a hooks module that draws in the band above the prompt. It was built and tested with Claude Code 2.1.295 in Windows Terminal.

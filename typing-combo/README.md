@@ -32,6 +32,13 @@ claude plugin install typing-combo --marketplace VkaZas/claude-code-mods
 | --- | --- | --- |
 | Language | `en`, `zh` | `en` |
 
+## What it hooks
+
+- `session.start`: loads your best combo and starts a 50 ms frame clock that plays the hits out.
+- `prompt.edit`: on each keystroke in the prompt box, counts it and adds a colored decoration over the characters just typed. Your text and cursor pass through unchanged, and pastes are not counted.
+- `prompt.submit`: when you send a prompt from the prompt box, ends the combo. The prompt itself goes through unchanged.
+- `ui.render` on `AbovePrompt`: draws the counter, with whatever is drawn beneath it passed through unchanged below.
+
 ## Notes
 
 - Typing Combo is a mod: a hooks module that draws in the band above the prompt and colors what you type. It was built and tested with Claude Code 2.1.295 in Windows Terminal.
