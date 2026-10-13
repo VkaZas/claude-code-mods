@@ -1,0 +1,55 @@
+{
+  "name": "vkazas-ticker",
+  "displayName": "Ticker",
+  "version": "1.0.0",
+  "description": "A live stock pane (/ticker): a scrolling tape, prices, day change and an intraday sparkline for your watchlist, from Yahoo Finance.",
+  "author": {
+    "name": "VkaZas",
+    "url": "https://github.com/VkaZas"
+  },
+  "homepage": "https://github.com/VkaZas/claude-code-mods/tree/main/vkazas-ticker",
+  "repository": "https://github.com/VkaZas/claude-code-mods",
+  "license": "MIT",
+  "keywords": [
+    "mod",
+    "pane",
+    "stocks",
+    "ticker",
+    "finance"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "refresh": {
+      "type": "string",
+      "title": "Refresh (seconds) / 刷新间隔（秒）",
+      "description": "How often to fetch quotes while the pane is open / 面板打开时多久拉一次行情",
+      "options": [
+        "5",
+        "10",
+        "30",
+        "60"
+      ],
+      "default": "10"
+    },
+    "colors": {
+      "type": "string",
+      "title": "Up and down colors / 涨跌配色",
+      "description": "us: green up, red down; cn: red up, green down / us：绿涨红跌；cn：红涨绿跌",
+      "options": [
+        "us",
+        "cn"
+      ],
+      "default": "us"
+    },
+    "language": {
+      "type": "string",
+      "title": "Language / 语言",
+      "description": "en: English; zh: 中文",
+      "options": [
+        "en",
+        "zh"
+      ],
+      "default": "en"
+    }
+  }
+}

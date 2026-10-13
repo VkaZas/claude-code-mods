@@ -1,0 +1,33 @@
+{
+  "name": "vkazas-side",
+  "displayName": "Side Chat",
+  "version": "1.0.0",
+  "description": "A side pane (/side) where you talk directly to a subagent forked from the main conversation, while the main conversation keeps working.",
+  "author": {
+    "name": "VkaZas",
+    "url": "https://github.com/VkaZas"
+  },
+  "homepage": "https://github.com/VkaZas/claude-code-mods/tree/main/vkazas-side",
+  "repository": "https://github.com/VkaZas/claude-code-mods",
+  "license": "MIT",
+  "keywords": [
+    "mod",
+    "pane",
+    "fork",
+    "subagent",
+    "parallel"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Language / 语言",
+      "description": "en: English; zh: 中文",
+      "options": [
+        "en",
+        "zh"
+      ],
+      "default": "en"
+    }
+  }
+}

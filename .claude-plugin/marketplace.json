@@ -5,7 +5,7 @@
     "url": "https://github.com/VkaZas"
   },
   "metadata": {
-    "description": "Little mods for the Claude Code terminal: pixel pets above the prompt and a typing combo counter."
+    "description": "Little mods for the Claude Code terminal: pixel pets and a typing combo above the prompt, a side pane that talks to a fork of the conversation, and a live stock pane."
   },
   "plugins": [
     {
@@ -19,6 +19,18 @@
       "source": "./typing-combo",
       "description": "A fighting-game combo counter that takes a hit on every keystroke.",
       "category": "fun"
+    },
+    {
+      "name": "vkazas-side",
+      "source": "./vkazas-side",
+      "description": "A side pane where you talk to a subagent forked from the main conversation.",
+      "category": "productivity"
+    },
+    {
+      "name": "vkazas-ticker",
+      "source": "./vkazas-ticker",
+      "description": "A live stock pane with a scrolling tape and intraday sparklines.",
+      "category": "productivity"
     }
   ]
 }
